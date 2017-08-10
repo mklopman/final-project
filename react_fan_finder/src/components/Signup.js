@@ -59,6 +59,13 @@ class SignUp extends Component {
             onChange={e => this.changeInput(e, 'password')}
           />
 
+          <label htmlFor='password_confirmation'>Password Confirmation</label>
+          <input value={this.state.inputs.password_confirmation}
+            id='password_confirmation'
+            name='password_confirmation' type='password'
+            onChange={e => this.changeInput(e, 'password_confirmation')}
+          />
+
           <div className="form-buttons">
             <button type="submit" className="form-button">Sign Up</button>
             <button onClick={this.props.toggleMode} className="form-button">Log In</button>

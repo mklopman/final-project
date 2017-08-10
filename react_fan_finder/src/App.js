@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 // import './App.css';
 // import Posts from './components/Posts';
-// import PostForm from './components/PostForm'
+import PostForm from './components/PostForm'
 import axios from 'axios';
 import Cookies from './helpers/Cookies';
 import UserAuth from './components/UserAuth';
@@ -94,6 +94,7 @@ class App extends Component {
     return (
       <div className="App">
         { this.renderView() }
+
       </div>
     );
   }

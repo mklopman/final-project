@@ -12,7 +12,7 @@ has_secure_password
   before_validation :downcase_email
 
   # make sure there is a password confirmation
-
+  validates :password_confirmation, presence: true
   validates :password, confirmation: true, presence: true
 
   # make sure the email is the correct format, unique, and present

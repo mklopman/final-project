@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class Api::UsersController < ApplicationController
   
 	before_action :require_token, only: [:validate]
 
@@ -7,7 +7,10 @@ class UsersController < ApplicationController
   end
 
   def create
+    puts "user_params.inspect():"
     puts user_params.inspect()
+    puts "user_params:"
+    puts user_params
     @user = User.new(user_params)
 
     if @user.valid?
@@ -28,6 +31,6 @@ class UsersController < ApplicationController
 
 
   def user_params
-    params.permit(:name, :email, :password)
+    params.permit(:name, :email, :password, :password_confirmation)
   end
 end

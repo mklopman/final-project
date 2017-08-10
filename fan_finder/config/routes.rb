@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   	namespace :api do 
 		resources :posts  
 		resources :messages, only:[:create, :update, :destroy]
-		get "/api/users/validate", to: "api/users#validate"
-  		post "/api/users", to: "api/users#create"
-  		post "/api/login", to: "api/sessions#create"
+		get "/users/validate", to: "users#validate"
+  		post "/users", to: "users#create"
+  		post "/login", to: "sessions#create"
 	end
 end
