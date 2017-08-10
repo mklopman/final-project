@@ -27,7 +27,7 @@ end
 
 private
 	def post_params 
-		params.permit(:title, :content, :team, :location, :event, :date, :user_id)
+		params.permit(:name, :title, :content, :team, :location, :event, :date, :user_id)
 	end
 
 

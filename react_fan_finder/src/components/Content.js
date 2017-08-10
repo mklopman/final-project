@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-
+import PostForm from './PostForm';
 
 class Content extends Component {
   render() {
     return (
-      <h1>hi</h1>
+      <div>
+      <PostForm/>
+      </div>
     );
   }
 }

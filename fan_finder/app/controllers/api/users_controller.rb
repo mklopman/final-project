@@ -1,30 +1,33 @@
 class UsersController < ApplicationController
   
-	def show
-    @user = User.find(params[:id]) 
+	before_action :require_token, only: [:validate]
 
+  def validate
+    render :json => @current_user.json_hash
   end
 
-  def new 
-    @user = User.new
-    @users = User.all
-  end
-
-  def create 
+  def create
+    puts user_params.inspect()
     @user = User.new(user_params)
-   if @user.save
-     session[:user_id] = @user.id 
-     redirect_to @user 
-   else
-     redirect_to '/signup' 
-   end
- end
-  
 
-private
-   def user_params 
-     params.require(:user).permit(:name, :email, :password_digest)
-   end
+    if @user.valid?
+
+      @user.save()
+ 
+      render :json =>  @user.json_hash
+    else # if the user is not valid
+      # send back an error with the error messages
+      puts @user.errors.messages.inspect()
+      render status: :bad_request, :json => {
+        :errors => @user.errors.messages
+      }
+    end
+  end
+
+  private
 
 
+  def user_params
+    params.permit(:name, :email, :password)
+  end
 end
