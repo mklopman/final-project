@@ -7,39 +7,55 @@ class Posts extends Component {
 		super()
 		this.state = {
 			posts: [],
+			showOnePost: ""
 		};
 	}
 
 	componentDidMount(){
-		console.error("HI FROM COMPONENT DID MOUNT")
-		$.get("http://localhost:3000/api/posts")
+		console.log("HI FROM COMPONENT DID MOUNT")
+		if (!this.state.posts.length) {
+			$.get("http://localhost:3000/api/posts")
+			.done((data) => {
+	        	this.setState(data)
+	    	});
+		}
+	}
+
+	renderSinglePost(id){
+		console.log('id :', id)
+		$.get(`http://localhost:3000/api/posts/` + id)
 		.done((data) => {
-	        this.setState(data)
-	    });
+			return(
+				<Post/>
+		    )
+		});
 	}
 
 
 	render() {
-
 		 const posts = this.state.posts.map((post, i)=>{
 		     return(
 		        <li key={i}>
 		           <Post 
-		           team={post.team} 
-		           content={post.content} 
+		           team={post.team}
+		           content={post.content}  
 		           event={post.event} 
 		           date={post.date} 
 		           title={post.title} 
 		           id={post.id} 
 		           location={post.location}/>
+		           <button
+		           type="submit"
+		           onClick={()=>{this.setState({showOnePost: i})}}
+		           >I'm In</button>
 		      	</li>
 		     );
 	    });
 
-		console.log(this.state.posts)
 		return (
 			<div>
-			{posts}
+			{this.state.showOnePost ? this.renderSinglePost(this.state.showOnePost) : []}
+			{this.state.showOnePost ? [] : posts}
 			</div>
 		);
 	}
