@@ -11,7 +11,8 @@ def show
 end
 
 def create 
-        @post = Post.create(post_params) 
+        @post = Post.new(post_params) 
+        puts params
         if @post.valid?
            @post.save
            render :json => {:post => @post}

@@ -16,54 +16,53 @@ class PostForm extends Component {
 					};
 	}
 
-handleNameChange(event){
+	handleNameChange(event){
 		this.setState({ nameValue: event.target.value });
 	}
 
-handleTitleChange(event){
+	handleTitleChange(event){
 		this.setState(
 			{titleValue: event.target.value}
 			);
 	}
 
-handleTeamChange(event){
+	handleTeamChange(event){
 	this.setState(
 			{teamValue: event.target.value}
 		);
-}
+	}
 
-handleEventChange(event){
+	handleEventChange(event){
 		this.setState(
 			{eventValue: event.target.value}
 			);
 	}
 
-handleDateChange(event){
+	handleDateChange(event){
 		this.setState(
 			{dateValue: event.target.value}
 			);
 	}
 
-handleLocationChange(event){
+	handleLocationChange(event){
 		this.setState(
 			{locationValue: event.target.value}
 			);
 	}
 
-handleContentChange(event){
+	handleContentChange(event){
 		this.setState(
 			{contentValue: event.target.value}
 			);
 	}
 
-formResponse(data){
-	console.log('got this data back:', data);
+	formResponse(data){
+		console.log('got this data back:', data);
 		this.setState({data: data})
 	}
 
-formSubmit(event){
+	formSubmit(event){
 		event.preventDefault();
-		console.log("event.target.value:", event.target.value);
 		$.ajax({
 		    url: "http://localhost:3000/api/posts",
   			method: 'POST',
@@ -73,12 +72,12 @@ formSubmit(event){
 		    		event: this.state.eventValue,
 		    		date: this.state.dateValue,
 		    		location: this.state.locationValue,
-		    		content: this.state.contentValue }
+		    		content: this.state.contentValue,
+		    		user_id: this.props.user.id }
 		}).done((data) => {
 		    this.formResponse(data);
 		});
 	}
-
 
 	render() {
 

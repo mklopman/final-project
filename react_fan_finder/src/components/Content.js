@@ -5,7 +5,7 @@ class Content extends Component {
   render() {
     return (
       <div>
-      <PostForm/>
+      <PostForm user={ this.props.user }/>
       </div>
     );
   }

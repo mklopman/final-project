@@ -23,7 +23,9 @@ class Login extends Component {
     axios.post(`${this.props.url}/login`, this.state.inputs)
       .then(res => { // set the user based off of the response
         this.props.setUser(res.data);
+        console.log(res.data)
       })
+
   }
 
   // method to change an input
