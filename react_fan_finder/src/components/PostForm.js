@@ -5,15 +5,16 @@ import $ from 'jquery';
 class PostForm extends Component {
 	constructor(props){
 		super(props);
-		this.state = {nameValue: "",
-					  titleValue: "", 
-					  teamValue: "",
-					  eventValue: "",
-					  dateValue: "",
-					  locationValue: "",
-					  contentValue: "",
-					  data: []
-					};
+		this.state = {
+			nameValue: "",
+		  titleValue: "", 
+		  teamValue: "",
+		  eventValue: "",
+		  dateValue: "",
+		  locationValue: "",
+		  contentValue: "",
+		  data: []
+		};
 	}
 
 	handleNameChange(event){
@@ -82,39 +83,35 @@ class PostForm extends Component {
 	}
 
 	render() {
-
-
-
-		return(
+		return (
 			<div>
-			<form onSubmit={this.formSubmit.bind(this)}>
-				<label>
-					Name:
-					<input type="text" name="name" value={ this.state.nameValue } onChange={ this.handleNameChange.bind(this) }/>
-							
-					Title:
-					<input type="text" name="title" value={ this.state.titleValue } onChange={ this.handleTitleChange.bind(this) }/>
-							
-					Team:
-					<input type="text" name="team" value={ this.state.teamValue } onChange={ this.handleTeamChange.bind(this) }/>
-							
-					Event:
-					<input type="text" name="event" value={ this.state.eventValue } onChange={ this.handleEventChange.bind(this) }/>
-							
-					When:
-					<input type="text" name="date" value={ this.state.dateValue } onChange={ this.handleDateChange.bind(this) }/>
-							
-					Location:
-					<input type="text" name="location" value={ this.state.locationValue } onChange={ this.handleLocationChange.bind(this) }/>
+				<form onSubmit={this.formSubmit.bind(this)}>
+					<label>
+						Name:
+						<input type="text" name="name" value={ this.state.nameValue } onChange={ this.handleNameChange.bind(this) }/>
+								
+						Title:
+						<input type="text" name="title" value={ this.state.titleValue } onChange={ this.handleTitleChange.bind(this) }/>
+								
+						Team:
+						<input type="text" name="team" value={ this.state.teamValue } onChange={ this.handleTeamChange.bind(this) }/>
+								
+						Event:
+						<input type="text" name="event" value={ this.state.eventValue } onChange={ this.handleEventChange.bind(this) }/>
+								
+						When:
+						<input type="text" name="date" value={ this.state.dateValue } onChange={ this.handleDateChange.bind(this) }/>
+								
+						Location:
+						<input type="text" name="location" value={ this.state.locationValue } onChange={ this.handleLocationChange.bind(this) }/>
 
-					Description:
-					<input type="text" name="content" value={ this.state.contentValue } onChange={ this.handleContentChange.bind(this) }/>
-							
-				</label>
+						Description:
+						<input type="text" name="content" value={ this.state.contentValue } onChange={ this.handleContentChange.bind(this) }/>
+					</label>
 					<input type="submit" value="Submit" />
 				</form>
 			</div>
-			)
+		)
 	}
 }
 

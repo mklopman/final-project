@@ -1,11 +1,4 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
-// import './App.css';
-// import Posts from './components/Posts';
-// import PostForm from './components/PostForm'
-
-//import Login from './components/Login';
-//import Signup from './components/Signup';
 import axios from 'axios';
 import Cookies from './helpers/Cookies';
 import UserAuth from './components/UserAuth';
@@ -17,6 +10,13 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom'
+// import logo from './logo.svg';
+// import './App.css';
+// import Posts from './components/Posts';
+// import PostForm from './components/PostForm'
+
+//import Login from './components/Login';
+//import Signup from './components/Signup';
 
 class App extends Component {
 	constructor(props){

@@ -1,23 +1,23 @@
 class Api::PostsController < ApplicationController
 
 def index
-        @posts = Post.all
-        render :json => {:posts => @posts}
+  @posts = Post.all
+  render :json => {:posts => @posts}
 end
 
 def show
-        @post = Post.find(params[:id])
-        render :json => {:post => @post} 
+  @post = Post.find(params[:id])
+  render :json => {:post => @post} 
 end
 
 def create 
-        @post = Post.new(post_params) 
-        puts params
-        if @post.valid?
-           @post.save
-           render :json => {:post => @post}
-        else
-           render json: @post.errors.full_messages, status: :unprocessable_entity
+  @post = Post.new(post_params) 
+  puts params
+  if @post.valid?
+     @post.save
+     render :json => {:post => @post}
+  else
+     render json: @post.errors.full_messages, status: :unprocessable_entity
         end
 end
 

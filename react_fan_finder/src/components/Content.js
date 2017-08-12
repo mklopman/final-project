@@ -8,20 +8,16 @@ class Content extends Component {
 		super(props);
 	}
 
-  	render() {
-	  	if(this.props.mode === 'content') {
-		    return (
-		      <div>
-		      <PostForm user={this.props.user} />
-		      <Posts user={this.props.user} />
-		      </div>
-		    );
+  render() {
+	  if (this.props.mode === 'content') {
+		  return (
+		    <div>
+	      	<PostForm user={this.props.user} />
+	      	<Posts user={this.props.user} />
+	      </div>
+		   );
 		} else {
-			return (
-				<div>
-					Nothing
-				</div>
-			);
+			return null
 		}
 	}
 }

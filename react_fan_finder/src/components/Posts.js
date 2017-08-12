@@ -34,24 +34,24 @@ class Posts extends Component {
 
 
 	render() {
-		 const posts = this.state.posts.map((post, i)=>{
-		     return(
-		        <div key={i}>
-		           <Post 
-		           team={post.team}
-		           content={post.content}  
-		           event={post.event} 
-		           date={post.date} 
-		           title={post.title} 
-		           id={post.id} 
-		           location={post.location}/>
-		           <button
-		           type="submit"
-		           onClick={()=>{this.setState({showOnePost: i})}}
-		           >I'm In</button>
-		      	</div>
-		     );
-	    });
+		const posts = this.state.posts.map((post, i) => {
+    	return(
+	      <div key={i}>
+        	<Post
+        		name={post.name} 
+          	team={post.team}
+          	content={post.content}  
+          	event={post.event} 
+          	date={post.date} 
+          	title={post.title} 
+          	id={post.id} 
+          	location={post.location}
+         		{...this.props}
+         	/>
+	        <button type="submit" onClick={()=>{this.setState({showOnePost: i})}}>I'm In</button>
+	    	</div>
+     	);
+    });
 
 		return (
 			<div>
