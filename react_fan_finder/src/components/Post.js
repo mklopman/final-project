@@ -6,7 +6,6 @@ class Post extends Component {
 	render() {
 		return (
 			<div>
-			"hi"
 			{this.props.team}
 			{this.props.content}
 			{this.props.event}

@@ -3,8 +3,8 @@ import $ from 'jquery';
 
 
 class PostForm extends Component {
-	constructor(){
-		super();
+	constructor(props){
+		super(props);
 		this.state = {nameValue: "",
 					  titleValue: "", 
 					  teamValue: "",
@@ -57,12 +57,13 @@ class PostForm extends Component {
 	}
 
 	formResponse(data){
-		console.log('got this data back:', data);
 		this.setState({data: data})
 	}
 
 	formSubmit(event){
 		event.preventDefault();
+		console.log('this is the user', this.props.user)
+		// console.log(this.state)
 		$.ajax({
 		    url: "http://localhost:3000/api/posts",
   			method: 'POST',
@@ -73,7 +74,8 @@ class PostForm extends Component {
 		    		date: this.state.dateValue,
 		    		location: this.state.locationValue,
 		    		content: this.state.contentValue,
-		    		user_id: this.props.user.id }
+		    		user_id: this.props.user.id
+		    		 }
 		}).done((data) => {
 		    this.formResponse(data);
 		});

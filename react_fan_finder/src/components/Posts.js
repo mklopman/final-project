@@ -3,8 +3,9 @@ import $ from 'jquery';
 import Post from './Post'
 
 class Posts extends Component {
-	constructor() {
-		super()
+	constructor(props) {
+		super(props)
+		//console.log(props);
 		this.state = {
 			posts: [],
 			showOnePost: ""
@@ -12,7 +13,7 @@ class Posts extends Component {
 	}
 
 	componentDidMount(){
-		console.log("HI FROM COMPONENT DID MOUNT")
+		//console.log("HI FROM COMPONENT DID MOUNT")
 		if (!this.state.posts.length) {
 			$.get("http://localhost:3000/api/posts")
 			.done((data) => {
@@ -35,7 +36,7 @@ class Posts extends Component {
 	render() {
 		 const posts = this.state.posts.map((post, i)=>{
 		     return(
-		        <li key={i}>
+		        <div key={i}>
 		           <Post 
 		           team={post.team}
 		           content={post.content}  
@@ -48,7 +49,7 @@ class Posts extends Component {
 		           type="submit"
 		           onClick={()=>{this.setState({showOnePost: i})}}
 		           >I'm In</button>
-		      	</li>
+		      	</div>
 		     );
 	    });
 

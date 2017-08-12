@@ -4,13 +4,26 @@ import Posts from './Posts';
 // import Post from './Post';
 
 class Content extends Component {
-  render() {
-    return (
-      <div>
-      <Posts/>
-      </div>
-    );
-  }
+	constructor(props){
+		super(props);
+	}
+
+  	render() {
+	  	if(this.props.mode === 'content') {
+		    return (
+		      <div>
+		      <PostForm user={this.props.user} />
+		      <Posts user={this.props.user} />
+		      </div>
+		    );
+		} else {
+			return (
+				<div>
+					Nothing
+				</div>
+			);
+		}
+	}
 }
 
 export default Content;

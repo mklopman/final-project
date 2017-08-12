@@ -2,31 +2,47 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 // import './App.css';
 // import Posts from './components/Posts';
-import PostForm from './components/PostForm'
+// import PostForm from './components/PostForm'
+
+//import Login from './components/Login';
+//import Signup from './components/Signup';
 import axios from 'axios';
 import Cookies from './helpers/Cookies';
 import UserAuth from './components/UserAuth';
 import Content from './components/Content';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom'
 
 class App extends Component {
-	constructor(){
-    super();
+	constructor(props){
+    super(props);
     // set up our state.
     this.state = {
-      user: false, // default user is no user
+      user: null, // default user is no user
       // the app needs to do a request, so there will be a loading time
       // we want to display something else while it does that
       mode: 'loading',
       
       url: 'http://localhost:3000/api',
     }
+
+    this.logout = this.logout.bind(this);
+    this.setUser = this.setUser.bind(this);
+    this.initUser = this.initUser.bind(this);
+    this.UserAuth = this.UserAuth.bind(this);
+    this.ContentComponent = this.ContentComponent.bind(this);
   }
 
   componentDidMount(){
     this.initUser();
   }
 
- initUser(){
+ initUser = () => {
     // get the token from the cookie
     const token = Cookies.get('token');
 
@@ -52,19 +68,22 @@ class App extends Component {
   }
 
   // method to set a user
-  setUser(user){
+  setUser = (user) => {
     // set a cookie with the user's token
     Cookies.set('token', user.token);
+    //console.log(user);
     // set state to have the user and the mode to content
-    this.setState({user: user, mode: 'content'});
+    this.setState({ user, mode: 'content' });
+
+    //console.log(this.state.user)
   }
 
   // method to log out
-  logout(){
+  logout = () => {
     // take away the cookie
     Cookies.set('token', '');
     // remove the user and set the mode to auth
-    this.setState({user: false, mode: 'auth'});
+    this.setState({ user: null, mode: 'auth' });
   }
 
   // method that renders the view based on the mode in the state
@@ -82,20 +101,50 @@ class App extends Component {
           setUser={this.setUser.bind(this)}
           url={this.state.url}
         />
-      )
+      );
     } else {
-      return (
-        <Content logout={this.logout.bind(this)} user={this.state.user} />
-      )
+    	return  ( 
+    		<div>
+	    		<h1>Hi {this.state.user.name}!</h1>
+	    		<button onClick={this.logout}>Logout</button>
+	    		<br/>
+	    		<br/>
+    		</div>
+    	);
     }
+  }
+
+  UserAuth = () => {
+  	return (
+  		<UserAuth 
+  			setUser={this.setUser.bind(this)}
+  		/>
+  	);
+  }
+
+  ContentComponent = () => {
+  	//console.log(this.state.user);
+  	return (
+  		<Content
+  			mode={this.state.mode}
+  			user={this.state.user}
+  		/>
+  	);
   }
 
   render() {
     return (
+    	<Router>	
       <div className="App">
         { this.renderView() }
+        <Navbar mode={this.state.mode} />
 
+      <Route exact path="/" component={Home}/>
+      <Route path="/home" render={() => this.ContentComponent()}/>
+      <Route path="/login" render={() => this.UserAuth()} />
+      <Route path="/signup" component={UserAuth}/>
       </div>
+      </Router>
     );
   }
 }

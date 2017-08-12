@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+
 import Login from './Login';
 import Signup from './Signup';
 
 class UserAuth extends Component {
-  constructor(){
-    super();
-    // set up state
+  constructor(props){
+    super(props);
+    //console.log(this.props)
     this.state = {
       mode: 'login' 
     }
@@ -21,7 +22,7 @@ class UserAuth extends Component {
 
   render(){
     return this.state.mode === "login" ? (
-      <Login {...this.props} toggleMode={this.toggleMode.bind(this)} />
+      <Login setUser={this.props.setUser} {...this.props} toggleMode={this.toggleMode.bind(this)} />
     ) : (
       <Signup {...this.props} toggleMode={this.toggleMode.bind(this)} />
     )

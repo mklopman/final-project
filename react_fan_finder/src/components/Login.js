@@ -4,9 +4,9 @@ import axios from 'axios';
 // login component
 // this will render when the user auth mode is set to login
 class Login extends Component {
-  constructor(){
-    super();
-    // set default state
+  constructor(props){
+    super(props);
+    //console.log(props)
     this.state = {
       // we have 2 inputs that we will be changing
       inputs: {
@@ -20,10 +20,10 @@ class Login extends Component {
   login(e){
     e.preventDefault(); // prevent default form action
     // send request to make sure the email and password are correct
-    axios.post(`${this.props.url}/login`, this.state.inputs)
+    axios.post(`http://localhost:3000/api/login`, this.state.inputs)
       .then(res => { // set the user based off of the response
+        //console.log(res.data)
         this.props.setUser(res.data);
-        console.log(res.data)
       })
 
   }
