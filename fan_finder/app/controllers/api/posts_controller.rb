@@ -1,7 +1,7 @@
 class Api::PostsController < ApplicationController
 
 def index
-  @posts = Post.all
+  @posts = Post.order(:date)
   render :json => {:posts => @posts}
 end
 
@@ -11,7 +11,7 @@ def show
 end
 
 def create 
-  @post = Post.new(post_params) 
+  @post = Post.new(post_params)
   puts params
   if @post.valid?
      @post.save

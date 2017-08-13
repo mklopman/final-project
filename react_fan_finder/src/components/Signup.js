@@ -37,31 +37,31 @@ class SignUp extends Component {
 
   render(){
     return(
-      <div className="auth-form">
+      <div className="signup-form">
         <h2>Sign Up</h2>
         <form onSubmit={this.signUp.bind(this)}>
 
           <label htmlFor='name'>Name</label>
           <input value={this.state.inputs.name}
-            id='name' name='name' type='text'
+            id='signup-name' name='name' type='text'
             onChange={e => this.changeInput(e, 'name')}
           />
 
           <label htmlFor='email'>Email</label>
           <input value={this.state.inputs.email}
-            id='email' name='email' type='email'
+            id='signup-email' name='email' type='email'
             onChange={e => this.changeInput(e, 'email')}
           />
 
           <label htmlFor='password'>Password</label>
           <input value={this.state.inputs.password}
-            id='password' name='password' type='password'
+            id='signup-password' name='password' type='password'
             onChange={e => this.changeInput(e, 'password')}
           />
 
           <label htmlFor='password_confirmation'>Password Confirmation</label>
           <input value={this.state.inputs.password_confirmation}
-            id='password_confirmation'
+            id='signup_password_confirmation'
             name='password_confirmation' type='password'
             onChange={e => this.changeInput(e, 'password_confirmation')}
           />

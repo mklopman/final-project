@@ -57,6 +57,7 @@ class Post extends Component {
 
 	render() {
 		return (
+			<div className="posts-container">
 			<div className="post-wrap">
 				<div className="user-info">
 					<span>{this.props.name}</span>
@@ -68,6 +69,7 @@ class Post extends Component {
 				<button className="comment-button" onClick={()=>{this.setState({commentMode: true})}}>Comment On This Post</button>
 				{ this.state.commentMode ? <CommentForm {...this.props} user={this.props.user} commentFormSubmit={this.commentFormSubmit.bind(this)} handleCommentNameChange={this.handleCommentNameChange.bind(this)} handleCommentMessageChange={this.handleCommentMessageChange.bind(this)}/> : null }
 				{ this.state.commentsToShow ? <Comment {...this.props} data={this.state.data} /> : null }
+			</div>
 			</div>
 		)
 	}

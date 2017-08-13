@@ -39,25 +39,25 @@ class Login extends Component {
 
   render(){
     return(
-      <div className="auth-form">
-        <h2>Log In</h2>
-        <form onSubmit={this.login.bind(this)}>
+      <div className="login-form">
+        <h2 className="login-header">Log In</h2>
+        <form className="official-login" onSubmit={this.login.bind(this)}>
 
           <label htmlFor='email'>Email</label>
           <input value={this.state.inputs.email}
-            id='email' name='email' type='email'
+            id='login-email' name='email' type='email'
             onChange={e => this.changeInput(e, 'email')}
           />
 
           <label htmlFor='password'>Password</label>
           <input value={this.state.inputs.password}
-            id='password' name='password' type='password'
+            id='login-password' name='password' type='password'
             onChange={e => this.changeInput(e, 'password')}
           />
 
           <div className="form-buttons">
-            <button type="submit" className="form-button">Login</button>
-            <button onClick={this.props.toggleMode} className="form-button">Sign Up</button>
+            <button type="submit" className="login-button">Login</button>
+            <button onClick={this.props.toggleMode} className="signup-form-button">Sign Up</button>
           </div>
 
         </form>

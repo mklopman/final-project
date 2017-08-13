@@ -48,7 +48,7 @@ class Posts extends Component {
           	location={post.location}
          		{...this.props}
          	/>
-	        <button type="submit" onClick={()=>{this.setState({showOnePost: i})}}>I'm In</button>
+	        
 	    	</div>
      	);
     });
