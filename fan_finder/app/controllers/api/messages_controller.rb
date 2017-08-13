@@ -9,16 +9,11 @@ class Api::MessagesController < ApplicationController
 
   def create
     @message = Message.new(message_params)
-    # if @message.valid?
-    #    @message.save
-    #    render :json => {:message => @message}
-    # end
-    # TODO: add back logic pased on post_id here and in the permits below
-    # @post = Post.find(params[:message][:post_id])
-    # unless @message.save
-    #   flash[:message] = @message.errors.messages
-    # end
-    # redirect_back fallback_location: @post
+    @post = Post.find(@message.post_id)
+    unless @message.save
+      flash[:message] = @message.errors.messages
+    end
+    redirect_back fallback_location: @post
   end
 
   def update
@@ -35,10 +30,10 @@ class Api::MessagesController < ApplicationController
 
   private
   def set_message
-    @message = message.find(params[:id])
+    @message = Message.find(params[:id])
   end
   def message_params
-    params.permit(:name, :message, :user_id)
+    params.permit(:name, :message, :user_id, :post_id)
     # params.require(:message).permit(:content, :user_id, :post_id)
   end
 end

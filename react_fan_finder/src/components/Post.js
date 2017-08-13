@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CommentForm from './CommentForm';
-import Comments from './Comments';
+// import Comments from './Comments';
 import Comment from './Comment';
 import $ from 'jquery';
 
@@ -14,7 +14,7 @@ class Post extends Component {
 			commentsToShow: props.commentsToShow || false,
 			commentNameValue: "",
 			commentMessageValue: "",
-			data: {}
+			data: props.data || {}
 		}
 	}
 
@@ -39,16 +39,20 @@ class Post extends Component {
 		    data: { 
 		    	name: this.state.commentNameValue,
 	    		message: this.state.commentMessageValue,
-	    		user_id: this.props.user.id
+	    		user_id: this.props.user.id,
+	    		post_id: this.props.id
 		    }
 		}).done((data) => {
 		    this.setState({ 
 		    	commentsToShow: true,
-		    	// data: this.state.commentMessageValue
 		    });
-		    this.commentFormResponse(data);
+		    this.commentFormResponse({
+		    	name: this.state.commentNameValue,
+	    		message: this.state.commentMessageValue,
+	    		user_id: this.props.user.id,
+	    		post_id: this.props.id
+		    });
 		});
-		this.setState({ data: this.state.data})
 	}
 
 	render() {
@@ -63,7 +67,7 @@ class Post extends Component {
 				<div className="user-post">{this.props.content}</div>
 				<button className="comment-button" onClick={()=>{this.setState({commentMode: true})}}>Comment On This Post</button>
 				{ this.state.commentMode ? <CommentForm {...this.props} user={this.props.user} commentFormSubmit={this.commentFormSubmit.bind(this)} handleCommentNameChange={this.handleCommentNameChange.bind(this)} handleCommentMessageChange={this.handleCommentMessageChange.bind(this)}/> : null }
-				{ this.state.commentsToShow ? <Comment {...this.props} name={this.state.commentNameValue} message={this.state.commentMessageValue} /> : null }
+				{ this.state.commentsToShow ? <Comment {...this.props} data={this.state.data} /> : null }
 			</div>
 		)
 	}
