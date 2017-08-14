@@ -21976,3 +21976,1319 @@ Processing by Api::PostsController#index as */*
 Completed 200 OK in 43ms (Views: 22.8ms | ActiveRecord: 13.1ms)
 
 
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 13:21:51 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 79ms (Views: 0.7ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 13:21:51 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 33ms (Views: 19.0ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 13:23:19 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 13:23:19 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (2.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 83ms (Views: 79.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 13:24:58 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 13:24:58 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 13:33:13 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 13:33:13 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 13:33:20 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 13:33:20 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 13:34:12 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 13:34:12 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 13:35:43 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 13:35:43 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 148ms (Views: 147.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 13:41:16 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 13:41:16 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/posts" for 127.0.0.1 at 2017-08-13 13:41:53 -0400
+Processing by Api::PostsController#create as */*
+  Parameters: {"name"=>"asdf", "title"=>"asdf", "team"=>"asf", "event"=>"asdf", "date"=>"asf", "location"=>"asf", "content"=>"", "user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 42ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/posts" for 127.0.0.1 at 2017-08-13 13:41:56 -0400
+Processing by Api::PostsController#create as */*
+  Parameters: {"name"=>"asdf", "title"=>"asdf", "team"=>"asf", "event"=>"asdf", "date"=>"asf", "location"=>"asf", "content"=>"", "user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 13:41:58 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 13:41:58 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/posts" for 127.0.0.1 at 2017-08-13 13:42:20 -0400
+Processing by Api::PostsController#create as */*
+  Parameters: {"name"=>"lskjdf;lkj", "title"=>"a;skdjf;s", "team"=>"ask;fs", "event"=>"aslkdfj;s", "date"=>"s;lkdajf;slkfj", "location"=>"a;slkdf;as", "content"=>"a;lksdlasf", "user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("user_id", "title", "content", "team", "event", "date", "location", "name") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["user_id", 1], ["title", "a;skdjf;s"], ["content", "a;lksdlasf"], ["team", "ask;fs"], ["event", "aslkdfj;s"], ["date", "s;lkdajf;slkfj"], ["location", "a;slkdf;as"], ["name", "lskjdf;lkj"]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 13:42:23 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 13:42:23 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/posts" for 127.0.0.1 at 2017-08-13 13:43:05 -0400
+Processing by Api::PostsController#create as */*
+  Parameters: {"name"=>"asf;lkj", "title"=>"a;lkdfj;l", "team"=>"as;lkdfj", "event"=>"a;slkdfj", "date"=>"8/14", "location"=>"asfd", "content"=>"asdfsf", "user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("user_id", "title", "content", "team", "event", "date", "location", "name") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["user_id", 1], ["title", "a;lkdfj;l"], ["content", "asdfsf"], ["team", "as;lkdfj"], ["event", "a;slkdfj"], ["date", "8/14"], ["location", "asfd"], ["name", "asf;lkj"]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 13:43:08 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 13:43:08 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/messages" for 127.0.0.1 at 2017-08-13 13:48:20 -0400
+Processing by Api::MessagesController#create as */*
+  Parameters: {"name"=>"missy", "message"=>"a comment", "user_id"=>"1", "post_id"=>"20"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("post_id", "user_id", "name", "message") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 20], ["user_id", 1], ["name", "missy"], ["message", "a comment"]]
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/home
+Completed 302 Found in 30ms (ActiveRecord: 9.4ms)
+
+
+Started POST "/api/messages" for 127.0.0.1 at 2017-08-13 13:48:28 -0400
+Processing by Api::MessagesController#create as */*
+  Parameters: {"name"=>"missy", "message"=>"a comment", "user_id"=>"1", "post_id"=>"20"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("post_id", "user_id", "name", "message") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 20], ["user_id", 1], ["name", "missy"], ["message", "a comment"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/home
+Completed 302 Found in 11ms (ActiveRecord: 4.0ms)
+
+
+Started POST "/api/messages" for 127.0.0.1 at 2017-08-13 13:48:38 -0400
+Processing by Api::MessagesController#create as */*
+  Parameters: {"name"=>"missy", "message"=>"a comment", "user_id"=>"1", "post_id"=>"20"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "messages" ("post_id", "user_id", "name", "message") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 20], ["user_id", 1], ["name", "missy"], ["message", "a comment"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/home
+Completed 302 Found in 13ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 13:48:40 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 13:48:40 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/messages" for 127.0.0.1 at 2017-08-13 13:48:59 -0400
+Processing by Api::MessagesController#create as */*
+  Parameters: {"name"=>"asdfkj", "message"=>"a;skljfa;sljkdf", "user_id"=>"1", "post_id"=>"20"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("post_id", "user_id", "name", "message") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 20], ["user_id", 1], ["name", "asdfkj"], ["message", "a;skljfa;sljkdf"]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/home
+Completed 302 Found in 14ms (ActiveRecord: 7.0ms)
+
+
+Started POST "/api/messages" for 127.0.0.1 at 2017-08-13 13:49:43 -0400
+Processing by Api::MessagesController#create as */*
+  Parameters: {"name"=>"missy", "message"=>"a coment", "user_id"=>"1", "post_id"=>"13"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "messages" ("post_id", "user_id", "name", "message") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 13], ["user_id", 1], ["name", "missy"], ["message", "a coment"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/home
+Completed 302 Found in 10ms (ActiveRecord: 3.8ms)
+
+
+Started POST "/api/messages" for 127.0.0.1 at 2017-08-13 13:50:31 -0400
+Processing by Api::MessagesController#create as */*
+  Parameters: {"name"=>"missy", "message"=>"a coment", "user_id"=>"1", "post_id"=>"13"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("post_id", "user_id", "name", "message") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 13], ["user_id", 1], ["name", "missy"], ["message", "a coment"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/home
+Completed 302 Found in 12ms (ActiveRecord: 3.6ms)
+
+
+Started POST "/api/messages" for 127.0.0.1 at 2017-08-13 13:50:33 -0400
+Processing by Api::MessagesController#create as */*
+  Parameters: {"name"=>"missy", "message"=>"a coment", "user_id"=>"1", "post_id"=>"13"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("post_id", "user_id", "name", "message") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 13], ["user_id", 1], ["name", "missy"], ["message", "a coment"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/home
+Completed 302 Found in 10ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 13:51:56 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 13:51:56 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/messages" for 127.0.0.1 at 2017-08-13 13:52:22 -0400
+Processing by Api::MessagesController#create as */*
+  Parameters: {"name"=>"miss", "message"=>"a new comment", "user_id"=>"1", "post_id"=>"20"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("post_id", "user_id", "name", "message") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 20], ["user_id", 1], ["name", "miss"], ["message", "a new comment"]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/home
+Completed 302 Found in 15ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 13:53:09 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 13:53:09 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 13:57:20 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 13:57:20 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/api/messages" for 127.0.0.1 at 2017-08-13 13:57:25 -0400
+Processing by Api::MessagesController#create as */*
+  Parameters: {"name"=>"AFS", "message"=>"ASDF", "user_id"=>"1", "post_id"=>"13"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("post_id", "user_id", "name", "message") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 13], ["user_id", 1], ["name", "AFS"], ["message", "ASDF"]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/home
+Completed 302 Found in 14ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 14:01:07 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 14:01:07 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 14:01:25 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 14:01:25 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/messages" for 127.0.0.1 at 2017-08-13 14:01:31 -0400
+Processing by Api::MessagesController#create as */*
+  Parameters: {"name"=>"af", "message"=>"asf", "user_id"=>"1", "post_id"=>"13"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("post_id", "user_id", "name", "message") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 13], ["user_id", 1], ["name", "af"], ["message", "asf"]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/home
+Completed 302 Found in 14ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 14:01:42 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 14:01:42 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (6.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 29ms (Views: 21.4ms | ActiveRecord: 6.6ms)
+
+
+Started POST "/api/messages" for 127.0.0.1 at 2017-08-13 14:01:46 -0400
+Processing by Api::MessagesController#create as */*
+  Parameters: {"name"=>"asf", "message"=>"asdf", "user_id"=>"1", "post_id"=>"13"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("post_id", "user_id", "name", "message") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 13], ["user_id", 1], ["name", "asf"], ["message", "asdf"]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/home
+Completed 302 Found in 13ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 14:04:18 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 14:04:18 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2017-08-13 17:21:20 -0400
+Processing by Api::SessionsController#create as HTML
+  Parameters: {"email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "michaelklopman@gmail.com"], ["LIMIT", 1]]
+Completed 200 OK in 141ms (Views: 1.4ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 17:21:21 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2017-08-13 17:29:18 -0400
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::SessionsController#create as HTML
+  Parameters: {"email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "michaelklopman@gmail.com"], ["LIMIT", 1]]
+Completed 200 OK in 127ms (Views: 0.4ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 17:29:21 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 47ms (Views: 18.1ms | ActiveRecord: 13.3ms)
+
+
+Started POST "/api/messages" for 127.0.0.1 at 2017-08-13 17:29:25 -0400
+Processing by Api::MessagesController#create as */*
+  Parameters: {"name"=>"Michael Klopman", "message"=>"mmmm", "user_id"=>"1", "post_id"=>"20"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35mSQL (7.5ms)[0m  [1m[32mINSERT INTO "messages" ("post_id", "user_id", "name", "message") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 20], ["user_id", 1], ["name", "Michael Klopman"], ["message", "mmmm"]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/home
+Completed 302 Found in 66ms (ActiveRecord: 17.6ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 17:29:27 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 17:29:27 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 17:38:25 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 17:38:25 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 17:39:18 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 17:39:18 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (5.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 21ms (Views: 14.8ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 17:41:56 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 17:41:56 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 17:42:29 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 17:42:29 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 17:42:36 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 17:42:36 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 17:42:40 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 17:42:40 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 17:46:50 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 17:46:50 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 17:47:23 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 17:47:24 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 17:48:11 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 17:48:11 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 17:48:17 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 17:48:17 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 17:48:44 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 17:48:44 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 17:48:50 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 17:48:50 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 17:49:45 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 17:49:45 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:09:20 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:09:20 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:09:34 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:09:34 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:10:36 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:10:36 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:11:37 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:11:37 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:12:39 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:12:39 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:12:56 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:12:56 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:15:30 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:15:30 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:16:07 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:16:07 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:35:07 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:35:07 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:36:32 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:36:32 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:38:33 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:38:33 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:40:18 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:40:19 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:40:30 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:40:30 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:42:26 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:42:26 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:42:35 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:42:35 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:42:49 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:42:49 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:44:54 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:44:54 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:48:39 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:48:39 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (14.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 28ms (Views: 12.8ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:55:15 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:55:15 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 89ms (Views: 87.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:56:36 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:56:36 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:57:17 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:57:17 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/posts" for 127.0.0.1 at 2017-08-13 18:57:22 -0400
+Processing by Api::PostsController#create as */*
+  Parameters: {"name"=>"", "title"=>"", "team"=>"", "event"=>"", "date"=>"", "location"=>"", "content"=>"gwegowhgiweufhweifuhewfiuewhfiweufhewfiuwehfiewufhe", "user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 27ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:57:27 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:57:27 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (3.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 12ms (Views: 8.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:57:43 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:57:43 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 18:57:59 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 18:57:59 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 19:01:46 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 19:01:47 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2017-08-13 19:02:07 -0400
+Processing by Api::SessionsController#create as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+Completed 401 Unauthorized in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2017-08-13 19:02:10 -0400
+Processing by Api::SessionsController#create as HTML
+  Parameters: {"email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "michaelklopman@gmail.com"], ["LIMIT", 1]]
+Completed 200 OK in 87ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 19:02:10 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2017-08-13 19:02:15 -0400
+Processing by Api::SessionsController#create as HTML
+  Parameters: {"email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "michaelklopman@gmail.com"], ["LIMIT", 1]]
+Completed 200 OK in 78ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 19:02:15 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2017-08-13 19:02:35 -0400
+Processing by Api::SessionsController#create as HTML
+  Parameters: {"email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "michaelklopman@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 80ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2017-08-13 19:02:41 -0400
+Processing by Api::SessionsController#create as HTML
+  Parameters: {"email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "michaelklopman@gmail.com"], ["LIMIT", 1]]
+Completed 200 OK in 97ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 19:02:41 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2017-08-13 19:06:33 -0400
+Processing by Api::SessionsController#create as HTML
+  Parameters: {"email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "michaelklopman@gmail.com"], ["LIMIT", 1]]
+Completed 200 OK in 111ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 19:06:33 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 19:09:30 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 19:09:31 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 19:12:33 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 19:12:33 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/messages" for 127.0.0.1 at 2017-08-13 19:15:01 -0400
+Processing by Api::MessagesController#create as */*
+  Parameters: {"name"=>"Missy", "message"=>"I am so in", "user_id"=>"1", "post_id"=>"13"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("post_id", "user_id", "name", "message") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 13], ["user_id", 1], ["name", "Missy"], ["message", "I am so in"]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/home
+Completed 302 Found in 14ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 19:16:02 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 19:16:02 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 19:17:19 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 19:17:19 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/validate?auth_token=V9VuoFmhAPCWNPt3cpVs4yfM" for 127.0.0.1 at 2017-08-13 19:30:03 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"V9VuoFmhAPCWNPt3cpVs4yfM"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "V9VuoFmhAPCWNPt3cpVs4yfM"], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 19:30:03 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (8146.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "fan_finder_development"[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/api/login" for 127.0.0.1 at 2017-08-13 21:54:54 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::SessionsController#create as HTML
+  Parameters: {"email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "michaelklopman@gmail.com"], ["LIMIT", 1]]
+Completed 200 OK in 114ms (Views: 0.3ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 21:54:55 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 32ms (Views: 15.7ms | ActiveRecord: 4.4ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (211.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "fan_finder_development"[0m
+  [1m[35m (199.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "fan_finder_test"[0m
+  [1m[35m (568.8ms)[0m  [1m[35mCREATE DATABASE "fan_finder_development" ENCODING = 'unicode'[0m
+  [1m[35m (357.3ms)[0m  [1m[35mCREATE DATABASE "fan_finder_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (2.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "messages" CASCADE[0m
+  [1m[35m (35.7ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "post_id" bigint, "user_id" bigint, "content" character varying, "name" character varying, "message" character varying)[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE  INDEX  "index_messages_on_post_id" ON "messages"  ("post_id")[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE  INDEX  "index_messages_on_user_id" ON "messages"  ("user_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "posts" CASCADE[0m
+  [1m[35m (14.6ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "user_id" bigint, "title" character varying, "content" character varying, "team" character varying, "event" character varying, "date" character varying, "location" character varying, "name" character varying)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE  INDEX  "index_posts_on_user_id" ON "posts"  ("user_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "password_digest" character varying, "password_confirmation" character varying, "auth_token" character varying)[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_auth_token" ON "users"  ("auth_token")[0m
+  [1m[35m (9.1ms)[0m  [1m[35mALTER TABLE "messages" ADD CONSTRAINT "fk_rails_f36d097b9e"
+FOREIGN KEY ("post_id")
+  REFERENCES "posts" ("id")
+[0m
+  [1m[35m (4.8ms)[0m  [1m[35mALTER TABLE "messages" ADD CONSTRAINT "fk_rails_273a25a7a6"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (4.2ms)[0m  [1m[35mALTER TABLE "posts" ADD CONSTRAINT "fk_rails_5b5ddfd518"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (10.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170812204822)[0m
+  [1m[35m (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170808191813),
+(20170808191821),
+(20170808191827),
+(20170810002754),
+(20170810193515),
+(20170810194635),
+(20170812204722);
+
+[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-08-14 01:55:19.765291"], ["updated_at", "2017-08-14 01:55:19.765291"]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "messages" CASCADE[0m
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "post_id" bigint, "user_id" bigint, "content" character varying, "name" character varying, "message" character varying)[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE  INDEX  "index_messages_on_post_id" ON "messages"  ("post_id")[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE  INDEX  "index_messages_on_user_id" ON "messages"  ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "posts" CASCADE[0m
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "user_id" bigint, "title" character varying, "content" character varying, "team" character varying, "event" character varying, "date" character varying, "location" character varying, "name" character varying)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE  INDEX  "index_posts_on_user_id" ON "posts"  ("user_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (14.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "password_digest" character varying, "password_confirmation" character varying, "auth_token" character varying)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_auth_token" ON "users"  ("auth_token")[0m
+  [1m[35m (4.1ms)[0m  [1m[35mALTER TABLE "messages" ADD CONSTRAINT "fk_rails_f36d097b9e"
+FOREIGN KEY ("post_id")
+  REFERENCES "posts" ("id")
+[0m
+  [1m[35m (3.8ms)[0m  [1m[35mALTER TABLE "messages" ADD CONSTRAINT "fk_rails_273a25a7a6"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (3.4ms)[0m  [1m[35mALTER TABLE "posts" ADD CONSTRAINT "fk_rails_5b5ddfd518"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170812204822)[0m
+  [1m[35m (3.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170808191813),
+(20170808191821),
+(20170808191827),
+(20170810002754),
+(20170810193515),
+(20170810194635),
+(20170812204722);
+
+[0m
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-08-14 01:55:19.917088"], ["updated_at", "2017-08-14 01:55:19.917088"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/api/users" for 127.0.0.1 at 2017-08-13 21:57:15 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::UsersController#create as HTML
+  Parameters: {"name"=>"Michael Klopman", "email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"Michael Klopman", "email"=>"michaelklopman@gmail.com", "password_confirmation"=>"[FILTERED]"}}
+Unpermitted parameter: :user
+Unpermitted parameter: :user
+Unpermitted parameter: :user
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "michaelklopman@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "michaelklopman@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "auth_token") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Michael Klopman"], ["email", "michaelklopman@gmail.com"], ["password_digest", "$2a$10$9aFb8iWEt4OxxhFnnnFwS.YE5jAXcfRFMbP55KQQMux3OpR4fmFwW"], ["auth_token", "HsCeZv2otqyzLV3ti2Hp5cZX"]]
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 104ms (Views: 0.5ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 21:57:17 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 33ms (Views: 9.8ms | ActiveRecord: 14.8ms)
+
+
+Started POST "/api/posts" for 127.0.0.1 at 2017-08-13 21:58:57 -0400
+Processing by Api::PostsController#create as */*
+  Parameters: {"name"=>"Michael Klopman", "title"=>"O's games this week", "team"=>"Baltimore Orioles", "event"=>"Orioles vs. Mariners", "date"=>"08/15/2017", "location"=>"NYC", "content"=>"Looking to watch the game at a bar on Wednesday. Anyone else down for that? ", "user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("user_id", "title", "content", "team", "event", "date", "location", "name") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["user_id", 1], ["title", "O's games this week"], ["content", "Looking to watch the game at a bar on Wednesday. Anyone else down for that? "], ["team", "Baltimore Orioles"], ["event", "Orioles vs. Mariners"], ["date", "08/15/2017"], ["location", "NYC"], ["name", "Michael Klopman"]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 56ms (Views: 0.7ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/api/users/validate?auth_token=HsCeZv2otqyzLV3ti2Hp5cZX" for 127.0.0.1 at 2017-08-13 21:58:59 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"HsCeZv2otqyzLV3ti2Hp5cZX"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "HsCeZv2otqyzLV3ti2Hp5cZX"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 21:58:59 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2017-08-13 22:04:40 -0400
+Processing by Api::SessionsController#create as HTML
+  Parameters: {"email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"michaelklopman@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "michaelklopman@gmail.com"], ["LIMIT", 1]]
+Completed 200 OK in 84ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 22:04:42 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/validate?auth_token=HsCeZv2otqyzLV3ti2Hp5cZX" for 127.0.0.1 at 2017-08-13 22:12:10 -0400
+Processing by Api::UsersController#validate as HTML
+  Parameters: {"auth_token"=>"HsCeZv2otqyzLV3ti2Hp5cZX"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = $1 LIMIT $2[0m  [["auth_token", "HsCeZv2otqyzLV3ti2Hp5cZX"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/posts" for 127.0.0.1 at 2017-08-13 22:12:10 -0400
+Processing by Api::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."date" ASC[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+

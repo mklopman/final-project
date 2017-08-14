@@ -84,31 +84,31 @@ class PostForm extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="post-form-wrapper">
 				<form onSubmit={this.formSubmit.bind(this)}>
-					<label>
-						Name:
-						<input type="text" name="name" value={ this.state.nameValue } onChange={ this.handleNameChange.bind(this) }/>
+					<label className="label">
+						<li className="post-form-list-item">Name:  
+						<input id="post-field" type="text" name="name" value={ this.state.nameValue } onChange={ this.handleNameChange.bind(this) }/></li>
 								
-						Title:
-						<input type="text" name="title" value={ this.state.titleValue } onChange={ this.handleTitleChange.bind(this) }/>
+						<li className="post-form-list-item">Title: 
+						<input id="post-field" type="text" name="title" value={ this.state.titleValue } onChange={ this.handleTitleChange.bind(this) }/></li>
 								
-						Team:
-						<input type="text" name="team" value={ this.state.teamValue } onChange={ this.handleTeamChange.bind(this) }/>
+						<li className="post-form-list-item">Team: 
+						<input id="post-field" type="text" name="team" value={ this.state.teamValue } onChange={ this.handleTeamChange.bind(this) }/></li>
 								
-						Event:
-						<input type="text" name="event" value={ this.state.eventValue } onChange={ this.handleEventChange.bind(this) }/>
+						<li className="post-form-list-item">Event: 
+						<input id="post-field" type="text" name="event" value={ this.state.eventValue } onChange={ this.handleEventChange.bind(this) }/></li>
 								
-						When:
-						<input type="text" name="date" value={ this.state.dateValue } onChange={ this.handleDateChange.bind(this) }/>
+						<li className="post-form-list-item">When: 
+						<input placeholder="mm/dd/yyy" id="post-field" type="text" name="date" value={ this.state.dateValue } onChange={ this.handleDateChange.bind(this) }/></li>
 								
-						Location:
-						<input type="text" name="location" value={ this.state.locationValue } onChange={ this.handleLocationChange.bind(this) }/>
+						<li className="post-form-list-item">Location: 
+						<input id="post-field" type="text" name="location" value={ this.state.locationValue } onChange={ this.handleLocationChange.bind(this) }/></li>
 
-						Description:
-						<input type="text" name="content" value={ this.state.contentValue } onChange={ this.handleContentChange.bind(this) }/>
+						<li className="post-form-list-item">Go On:
+						<input id="post-field-description" rows="5" columns="10" type="text" name="content" value={ this.state.contentValue } onChange={ this.handleContentChange.bind(this) }/></li>
 					</label>
-					<input type="submit" value="Submit" />
+					<input id="post-form-btn" type="submit" value="Submit" />
 				</form>
 			</div>
 		)

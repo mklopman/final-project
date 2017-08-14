@@ -105,8 +105,8 @@ class App extends Component {
     } else {
     	return  ( 
     		<div>
-	    		<h1>Hi {this.state.user.name}!</h1>
-	    		<button onClick={this.logout}>Logout</button>
+	    		<h1 className="user-name-header">Hi, {this.state.user.name}!</h1>
+	    		<button className="logout-button" onClick={this.logout}>Logout</button>
 	    		<br/>
 	    		<br/>
     		</div>

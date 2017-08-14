@@ -38,37 +38,37 @@ class SignUp extends Component {
   render(){
     return(
       <div className="signup-form">
-        <h2>Sign Up</h2>
-        <form onSubmit={this.signUp.bind(this)}>
+        <h2 className="signup-header">Sign Up</h2>
+        <form className="signup-official-form" onSubmit={this.signUp.bind(this)}>
 
-          <label htmlFor='name'>Name</label>
+          <label className="signup-labels" htmlFor='name'>Name</label>
           <input value={this.state.inputs.name}
             id='signup-name' name='name' type='text'
             onChange={e => this.changeInput(e, 'name')}
           />
 
-          <label htmlFor='email'>Email</label>
+          <label className="signup-labels" htmlFor='email'>Email</label>
           <input value={this.state.inputs.email}
             id='signup-email' name='email' type='email'
             onChange={e => this.changeInput(e, 'email')}
           />
 
-          <label htmlFor='password'>Password</label>
+          <label className="signup-labels" htmlFor='password'>Password</label>
           <input value={this.state.inputs.password}
             id='signup-password' name='password' type='password'
             onChange={e => this.changeInput(e, 'password')}
           />
 
-          <label htmlFor='password_confirmation'>Password Confirmation</label>
+          <label className="signup-labels" htmlFor='password_confirmation'>Password Confirmation</label>
           <input value={this.state.inputs.password_confirmation}
             id='signup_password_confirmation'
             name='password_confirmation' type='password'
             onChange={e => this.changeInput(e, 'password_confirmation')}
           />
 
-          <div className="form-buttons">
-            <button type="submit" className="form-button">Sign Up</button>
-            <button onClick={this.props.toggleMode} className="form-button">Log In</button>
+          <div className="signup-form-buttons">
+            <button type="submit" className="signup-form-button">Sign Up</button>
+            <button onClick={this.props.toggleMode} className="signup-form-button">Log In</button>
           </div>
 
         </form>

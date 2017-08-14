@@ -44,7 +44,7 @@ class Post extends Component {
 		    }
 		}).done((data) => {
 		    this.setState({ 
-		    	commentsToShow: true,
+		    	commentsToShow: true
 		    });
 		    this.commentFormResponse({
 		    	name: this.state.commentNameValue,
@@ -57,19 +57,18 @@ class Post extends Component {
 
 	render() {
 		return (
-			<div className="posts-container">
 			<div className="post-wrap">
 				<div className="user-info">
-					<span>{this.props.name}</span>
-					<span>{this.props.event}</span>
-					<span>{this.props.location}</span>
-					<span>{this.props.date}</span>
+					<span className="post-name">{this.props.name},</span>
+					<span className="post-team">{this.props.team}: </span>
+					<span className="post-event">{this.props.event}, </span>
+					<span className="post-location">{this.props.location}, </span>
+					<span className="post-date">{this.props.date}: </span>
 				</div>
 				<div className="user-post">{this.props.content}</div>
 				<button className="comment-button" onClick={()=>{this.setState({commentMode: true})}}>Comment On This Post</button>
 				{ this.state.commentMode ? <CommentForm {...this.props} user={this.props.user} commentFormSubmit={this.commentFormSubmit.bind(this)} handleCommentNameChange={this.handleCommentNameChange.bind(this)} handleCommentMessageChange={this.handleCommentMessageChange.bind(this)}/> : null }
 				{ this.state.commentsToShow ? <Comment {...this.props} data={this.state.data} /> : null }
-			</div>
 			</div>
 		)
 	}

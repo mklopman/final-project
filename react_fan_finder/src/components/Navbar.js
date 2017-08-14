@@ -6,8 +6,8 @@ import {
 const Navbar = (props) => {
 	if(props.mode !== 'auth'){
 		return (
-			<ul>
-				<li><NavLink to='/home'>Content</NavLink></li>
+			<ul className="message-board">
+				<li className="message-board-link"><NavLink to='/home'>MESSAGE BOARD</NavLink></li>
 			</ul>
 		);
 	} else {

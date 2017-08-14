@@ -39,28 +39,31 @@ class Login extends Component {
 
   render(){
     return(
+      <div>
+      <h1 className="fan-finder-header">FAN FINDER</h1>
       <div className="login-form">
         <h2 className="login-header">Log In</h2>
         <form className="official-login" onSubmit={this.login.bind(this)}>
 
-          <label htmlFor='email'>Email</label>
+          <label className="login-labels" htmlFor='email'>Email</label>
           <input value={this.state.inputs.email}
             id='login-email' name='email' type='email'
             onChange={e => this.changeInput(e, 'email')}
           />
 
-          <label htmlFor='password'>Password</label>
+          <label className="login-labels" htmlFor='password'>Password</label>
           <input value={this.state.inputs.password}
             id='login-password' name='password' type='password'
             onChange={e => this.changeInput(e, 'password')}
           />
 
           <div className="form-buttons">
-            <button type="submit" className="login-button">Login</button>
-            <button onClick={this.props.toggleMode} className="signup-form-button">Sign Up</button>
+            <button type="submit" className="login-form-buttons">Login</button>
+            <button onClick={this.props.toggleMode} className="login-form-buttons">Sign Up</button>
           </div>
 
         </form>
+      </div>
       </div>
     )
   }

@@ -32,6 +32,12 @@ class Posts extends Component {
 		});
 	}
 
+	// deletePost(id) {
+	// 	$.ajax({
+	// 	    url:(`http://localhost:3000/api/posts/` + id),
+ //  			method: 'DELETE',
+	// }
+
 
 	render() {
 		const posts = this.state.posts.map((post, i) => {
@@ -39,13 +45,13 @@ class Posts extends Component {
 	      <div key={i}>
         	<Post
         		name={post.name} 
-          	team={post.team}
-          	content={post.content}  
-          	event={post.event} 
-          	date={post.date} 
-          	title={post.title} 
-          	id={post.id} 
-          	location={post.location}
+	          	team={post.team}
+	          	content={post.content}  
+	          	event={post.event} 
+	          	date={post.date} 
+	          	title={post.title} 
+	          	id={post.id} 
+	          	location={post.location}
          		{...this.props}
          	/>
 	        
