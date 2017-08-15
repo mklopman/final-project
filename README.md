@@ -18,8 +18,8 @@
 - FlexBox
 
 ## WIREFRAMES
-![](../src/fan-finder-login-form.png)
+![](./src/fan-finder-login-form.png)
 
-![](../src/fanfinder-signup-page.png)
+![](./src/fanfinder-signup-page.png)
 
-![](../src/fan-finder-main-page.png)
+![](./src/fan-finder-main-page.png)
