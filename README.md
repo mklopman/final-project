@@ -20,6 +20,7 @@ So this app allows transplant sports fans connect with fans of the same team, in
 
 - Ruby on Rails
 - React
+- jQuery
 - Bcrypt
 - PostgresSQL
 - CORS
