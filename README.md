@@ -31,9 +31,3 @@ So this app allows transplant sports fans connect with fans of the same team, in
 - Having a show page for each individual post
 - Didn't get to using Google Maps and Geolocations to show a map instead of using my Sports Bar Finder. 
 
-
-![](./src/fan-finder-login-form.png)
-
-![](./src/fanfinder-signup-page.png)
-
-![](./src/fan-finder-main-page.png)
