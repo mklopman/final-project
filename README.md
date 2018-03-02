@@ -26,8 +26,3 @@ So this app allows transplant sports fans connect with fans of the same team, in
 - CORS
 - FlexBox
 
-## UNSOLVED PROBLEMS
-- Still working on getting the info to render without having to refresh the page
-- Having a show page for each individual post
-- Didn't get to using Google Maps and Geolocations to show a map instead of using my Sports Bar Finder. 
-
